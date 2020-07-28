@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">PMHoTroHocTap</string>
+    <string name="btn_1">1</string>
+    <string name="btn_0">0</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btn_C">C</string>
+    <string name="btn_Cong">+</string>
+    <string name="btn_Bang">=</string>
+    <string name="btn_Tru">-</string>
+    <string name="btn_Nhan">&#215;</string>
+    <string name="btn_Chia">&#247;</string>
+    <string name="btn_PhanTram">%</string>
+    <string name="btn_Phay">.</string>
+    <string name="btn_TenPhai">&#8594;</string>
+    <string name="btn_TenTrai">&#8592;</string>
+    <string name="btn_Abs">Abs</string>
+    <string name="btn_CLR">CLR</string>
+    <string name="btn_ALL">ALL</string>
+    <string name="btn_Exp">Exp</string>
+    <string name="btn_Ans">Ans</string>
+    <string name="btn_x">&#215;&#8315;&#185;</string>
+    <string name="btn_can">&#8730;&#215;</string>
+    <string name="btn_BinhPhuong">&#215;&#178;</string>
+    <string name="btn_GiaiThua">&#120;&#33;</string>
+    <string name="btn_MoNgoac">&#40;</string>
+    <string name="btn_DongNgoac">&#41;</string>
+    <string name="btn_Log">&#76;&#111;&#103;&#8336;&#120;</string>
+    <string name="btn_CanX">&#879;&#8730;&#121;</string>
+    <string name="btn_chuyenDoi">&#8644;</string>
 </resources>
