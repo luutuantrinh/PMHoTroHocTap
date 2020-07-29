@@ -34,4 +34,6 @@
     <string name="btn_Log">&#76;&#111;&#103;&#8336;&#120;</string>
     <string name="btn_CanX">&#879;&#8730;&#121;</string>
     <string name="btn_chuyenDoi">&#8644;</string>
+    <string name="btn_sin">sin</string>
+    <string name="btn_cos">cos</string>
 </resources>

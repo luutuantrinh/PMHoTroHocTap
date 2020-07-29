@@ -30,10 +30,11 @@
                     android:gravity="center">
 
                     <Button
+                        android:id="@+id/btn_USD"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/btnTop"
-                        android:text="US Dollar"
+                        android:text="USD Dollar"
                         android:textColor="@color/textbtn"
                         android:textSize="15dp"
                         android:gravity="center"></Button>
@@ -64,6 +65,7 @@
                     android:gravity="center">
 
                     <Button
+                        android:id="@+id/btn_Dong"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/btnTop"
@@ -91,7 +93,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/textview"
-                        android:textColor="@color/textbtn"></EditText>
+                        android:textColor="@color/textbtn"
+                        android:gravity="right"
+                        android:textSize="20dp"></EditText>
                 </LinearLayout>
 
                 <LinearLayout
@@ -105,7 +109,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/textview"
-                        android:textColor="@color/textbtn"></TextView>
+                        android:textColor="@color/textbtn"
+                        android:gravity="right"
+                        android:textSize="20dp"></TextView>
                 </LinearLayout>
 
 
@@ -153,13 +159,13 @@
 
                 <Button
                     style="@style/myButton"
-                    android:background="@drawable/ic_operator_fraction">
+                    android:text="@string/btn_sin">
 
                 </Button>
 
                 <Button
                     style="@style/myButton"
-                    android:background="@drawable/ic_function_power"></Button>
+                    android:text="@string/btn_cos"></Button>
 
                 <Button
                     style="@style/myButtonTop"

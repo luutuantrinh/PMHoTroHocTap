@@ -41,10 +41,13 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
     private Button btn_Cham;
     private Button btn_All;
     private Button btn_Clear;
+    private Button btn_USD;
+    private Button btn_Dong;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chuyen_doi_don_vi1);
+        setTitle("Chuyen Doi Tien Te");
         edt_ManHinh = (EditText) findViewById(R.id.edt_ManHinh);
         tv_KetQua = (TextView) findViewById(R.id.tv_KetQua);
         btn1 = (Button) findViewById(R.id.btn1);
@@ -57,15 +60,13 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
         btn8 = (Button) findViewById(R.id.btn8);
         btn9 = (Button) findViewById(R.id.btn9);
         btn0 = (Button) findViewById(R.id.btn0);
-        btn_Cong = (Button) findViewById(R.id.btn_Cong);
-        btn_Tru = (Button) findViewById(R.id.btn_Tru);
-        btn_Nhan = (Button) findViewById(R.id.btn_Nhan);
-        btn_Chia = (Button) findViewById(R.id.btn_Chia);
         btn_Chuyen = (Button) findViewById(R.id.btn_Chuyen);
         btn_KQ = (Button) findViewById(R.id.btn_KQ);
         btn_Cham = (Button) findViewById(R.id.btn_Cham);
         btn_All = (Button) findViewById(R.id.btnAll);
         btn_Clear = (Button) findViewById(R.id.btn_Clear);
+        btn_USD = (Button) findViewById(R.id.btn_USD);
+        btn_Dong = (Button) findViewById(R.id.btn_Dong);
         setEventClickViews();
     }
     public void setEventClickViews(){
@@ -79,10 +80,6 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
         btn8.setOnClickListener(this);
         btn9.setOnClickListener(this);
         btn0.setOnClickListener(this);
-        btn_Cong.setOnClickListener(this);
-        btn_Tru.setOnClickListener(this);
-        btn_Nhan.setOnClickListener(this);
-        btn_Chia.setOnClickListener(this);
         btn_Chuyen.setOnClickListener(this);
         btn_KQ.setOnClickListener(this);
         btn_Cham.setOnClickListener(this);
@@ -130,25 +127,19 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
                 //TO DO
                 edt_ManHinh.append("9");
                 break;
-            case R.id.btn_Cong:
-                //TO DO
-                edt_ManHinh.append("+");
-                break;
-            case R.id.btn_Tru:
-                //TO DO
-                edt_ManHinh.append("-");
-                break;
-            case R.id.btn_Nhan:
-                //TO DO
-                edt_ManHinh.append("*");
-                break;
-            case R.id.btn_Chia:
-                //TO DO
-                edt_ManHinh.append("/");
-                break;
             case R.id.btn_Cham:
                 //TO DO
                 edt_ManHinh.append(".");
+                break;
+            case R.id.btn_Chuyen:
+                if(btn_USD.getText()=="USD DOLLAR"){
+                    btn_USD.setText("VIETNAM DONG");
+                    btn_Dong.setText("USD DOLLAR");
+                }
+                else{
+                    btn_USD.setText("USD DOLLAR");
+                    btn_Dong.setText("VIETNAM DONG");
+                }
                 break;
             case R.id.btnAll:
                 tv_KetQua.setText("");
@@ -160,8 +151,16 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
                 break;
             case R.id.btn_KQ:
                 DecimalFormat df = new DecimalFormat("###.#######");
-                double result = Double.parseDouble(edt_ManHinh.getText().toString()) * 23000;
-                tv_KetQua.setText(df.format(result) + "");
+                double result;
+
+                if(btn_USD.getText()=="USD DOLLAR"){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 23206;
+                    tv_KetQua.setText(df.format(result) + " VND");
+                }
+                else if (btn_USD.getText()=="VIETNAM DONG") {
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) / 23206;
+                    tv_KetQua.setText(df.format(result) + " USD");
+                }
                 break;
             default:
                 break;
