@@ -8,17 +8,12 @@ import android.view.View;
 import android.view.inputmethod.BaseInputConnection;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.tdc.edu.vn.myapplication.R;
-
-import java.security.Key;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.OnClickListener{
+public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClickListener{
 
     private TextView tv_KetQua;
     private EditText edt_ManHinh;
@@ -32,22 +27,21 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
     private Button btn8;
     private Button btn9;
     private Button btn0;
-    private Button btn_Cong;
-    private Button btn_Tru;
-    private Button btn_Nhan;
-    private Button btn_Chia;
     private Button btn_Chuyen;
     private Button btn_KQ;
     private Button btn_Cham;
     private Button btn_All;
     private Button btn_Clear;
-    private Button btn_USD;
-    private Button btn_Dong;
+    private Spinner sp1;
+    private Spinner sp2;
+    public ChuyenDoiLuuLuong() {
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chuyen_doi_don_vi1);
-        setTitle("Chuyển đổi tiền tệ");
+        setContentView(R.layout.activity_chuyen_doi_luu_luong);
+        setTitle("Chuyển đổi lưu lượng");
         edt_ManHinh = (EditText) findViewById(R.id.edt_ManHinh);
         tv_KetQua = (TextView) findViewById(R.id.tv_KetQua);
         btn1 = (Button) findViewById(R.id.btn1);
@@ -65,8 +59,8 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
         btn_Cham = (Button) findViewById(R.id.btn_Cham);
         btn_All = (Button) findViewById(R.id.btnAll);
         btn_Clear = (Button) findViewById(R.id.btn_Clear);
-        btn_USD = (Button) findViewById(R.id.btn_USD);
-        btn_Dong = (Button) findViewById(R.id.btn_Dong);
+        sp1 = (Spinner) findViewById(R.id.sp1);
+        sp2 = (Spinner) findViewById(R.id.sp2);
         setEventClickViews();
     }
     public void setEventClickViews(){
@@ -131,16 +125,6 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
                 //TO DO
                 edt_ManHinh.append(".");
                 break;
-            case R.id.btn_Chuyen:
-                if(btn_USD.getText()=="USD DOLLAR"){
-                    btn_USD.setText("VIETNAM DONG");
-                    btn_Dong.setText("USD DOLLAR");
-                }
-                else{
-                    btn_USD.setText("USD DOLLAR");
-                    btn_Dong.setText("VIETNAM DONG");
-                }
-                break;
             case R.id.btnAll:
                 tv_KetQua.setText("");
                 edt_ManHinh.setText("");
@@ -152,14 +136,41 @@ public class ChuyenDoiDonVi1Activity extends AppCompatActivity implements View.O
             case R.id.btn_KQ:
                 DecimalFormat df = new DecimalFormat("###.#######");
                 double result;
-
-                if(btn_USD.getText()=="USD DOLLAR"){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 23206;
-                    tv_KetQua.setText(df.format(result) + " VND");
+                if(sp1.getSelectedItemPosition()==0&&sp2.getSelectedItemPosition()==0){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString());
+                    tv_KetQua.setText(df.format(result) + " GB");
                 }
-                else if (btn_USD.getText()=="VIETNAM DONG") {
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) / 23206;
-                    tv_KetQua.setText(df.format(result) + " USD");
+                else if(sp1.getSelectedItemPosition()==0&&sp2.getSelectedItemPosition()==1){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 1024;
+                    tv_KetQua.setText(df.format(result) + " MB");
+                }
+                else if(sp1.getSelectedItemPosition()==0&&sp2.getSelectedItemPosition()==2){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 106496;
+                    tv_KetQua.setText(df.format(result) + " KB");
+                }
+                else if(sp1.getSelectedItemPosition()==1&&sp2.getSelectedItemPosition()==0){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) / 1024;
+                    tv_KetQua.setText(df.format(result) + " GB");
+                }
+                else if(sp1.getSelectedItemPosition()==1&&sp2.getSelectedItemPosition()==1){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString());
+                    tv_KetQua.setText(df.format(result) + " MB");
+                }
+                else if(sp1.getSelectedItemPosition()==1&&sp2.getSelectedItemPosition()==2){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 1024;
+                    tv_KetQua.setText(df.format(result) + " KB");
+                }
+                else if(sp1.getSelectedItemPosition()==2&&sp2.getSelectedItemPosition()==0){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) /106496;
+                    tv_KetQua.setText(df.format(result) + " GB");
+                }
+                else if(sp1.getSelectedItemPosition()==2&&sp2.getSelectedItemPosition()==1){
+                    result = Double.parseDouble(edt_ManHinh.getText().toString()) /1024;
+                    tv_KetQua.setText(df.format(result) + " MB");
+                }
+                else {
+                    result = Double.parseDouble(edt_ManHinh.getText().toString());
+                    tv_KetQua.setText(df.format(result) + " KB");
                 }
                 break;
             default:

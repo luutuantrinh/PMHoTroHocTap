@@ -29,15 +29,11 @@
                     android:padding="5dp"
                     android:gravity="center">
 
-                    <Button
-                        android:id="@+id/btn_USD"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/btnTop"
-                        android:text="USD Dollar"
-                        android:textColor="@color/textbtn"
-                        android:textSize="15dp"
-                        android:gravity="center"></Button>
+                    <Spinner
+                        android:id="@+id/sp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:entries="@array/Spinner"></Spinner>
                 </LinearLayout>
 
                 <LinearLayout
@@ -54,7 +50,8 @@
                         android:background="@color/btnTop"
                         android:text="@string/btn_chuyenDoi"
                         android:textColor="@color/textbtn"
-                        android:textSize="20dp"></Button>
+                        android:textSize="20dp"
+                        android:clickable="false"></Button>
                 </LinearLayout>
 
                 <LinearLayout
@@ -64,15 +61,11 @@
                     android:padding="5dp"
                     android:gravity="center">
 
-                    <Button
-                        android:id="@+id/btn_Dong"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/btnTop"
-                        android:text="Vietnam Dong"
-                        android:textColor="@color/textbtn"
-                        android:textSize="15dp"
-                        android:gravity="center"></Button>
+                    <Spinner
+                        android:id="@+id/sp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:entries="@array/Spinner"></Spinner>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -159,6 +152,7 @@
                 <Button
                     style="@style/myButton"
                     android:text="@string/btn_sin">
+
                 </Button>
 
                 <Button

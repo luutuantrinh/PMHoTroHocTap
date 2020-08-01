@@ -25,7 +25,7 @@
         <item name="android:layout_margin">6dp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:textSize">35dp</item>
-        <item name="android:background">@color/btn</item>
+        <item name="android:background">@drawable/chuyenmaubtn</item>
         <item name="android:textColor">@color/textbtn</item>
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">false</item>
@@ -37,7 +37,7 @@
         <item name="android:layout_margin">6dp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:textSize">30dp</item>
-        <item name="android:background">@color/btn</item>
+        <item name="android:background">@drawable/chuyenmaubtn</item>
         <item name="android:textColor">@color/textbtn</item>
         <item name="android:textAllCaps">false</item>
     </style>

@@ -36,4 +36,9 @@
     <string name="btn_chuyenDoi">&#8644;</string>
     <string name="btn_sin">sin</string>
     <string name="btn_cos">cos</string>
+    <string-array name="Spinner">
+        <item>GB</item>
+        <item>MB</item>
+        <item>KB</item>
+    </string-array>
 </resources>
