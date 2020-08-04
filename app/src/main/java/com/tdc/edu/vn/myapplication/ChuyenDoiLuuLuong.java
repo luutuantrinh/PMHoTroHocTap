@@ -286,8 +286,8 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
                 }
             }
 
-            float result = (rateInput / rateOutput) * Float.parseFloat(input.getText().toString());
-            output.setText(result + "");
+            float result = (rateInput*1000 / rateOutput*1000) * Float.parseFloat(input.getText().toString());
+            output.setText(result/1000 + "");
         }
     }
 }

@@ -115,7 +115,6 @@ public class Database extends SQLiteOpenHelper {
         //Distance convert
         String root = "M";
         String type = "distance";
-        String subStr = "m, cm, mm, km...";
         int image = R.drawable.ic_ruler;
 
         String unitName1 =  "M";
@@ -134,10 +133,10 @@ public class Database extends SQLiteOpenHelper {
         float rateToRoot5 = (float) 0.1;
 
         String unitName6 =  "MILE";
-        float rateToRoot6 = (float) 0.000621371;
+        float rateToRoot6 = (float) 1609.344;
 
         String unitName7 =  "INCHES";
-        float rateToRoot7 = (float) 39.3700787;
+        float rateToRoot7 = (float) 0.0254;
 
         convertUnitsList.add(new ConvertUnit("1", unitName1, rateToRoot1, root, type));
         convertUnitsList.add(new ConvertUnit("2", unitName2, rateToRoot2, root, type));
