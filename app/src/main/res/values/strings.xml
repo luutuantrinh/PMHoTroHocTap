@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PMHoTroHocTap</string>
+    <string-array name="spinner1">Lựa chọn
+        <item>Lựa chọn 1</item>
+        <item>Lựa chọn 2</item>
+        <item>Lựa chọn 3</item>
+    </string-array>
 </resources>

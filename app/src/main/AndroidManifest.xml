@@ -9,12 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".CTToan.MenutoanActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".CTToan.ToanCTactivity">
+        </activity>
+        <activity android:name=".CTToan.Lyactivity">
+        </activity>
+        <activity android:name=".CTToan.Hoaactivity">
+        </activity>
+        <activity android:name=".maytinhcoban.MayTinhCo">
+
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
