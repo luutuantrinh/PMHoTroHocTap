@@ -81,14 +81,14 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1">
 
-                    <EditText
-                        android:id="@+id/edt_ManHinh"
+                    <TextView
+                        android:id="@+id/tv_ManHinh"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/textview"
                         android:textColor="@color/textbtn"
                         android:gravity="right"
-                        android:textSize="20dp"></EditText>
+                        android:textSize="20dp"></TextView>
                 </LinearLayout>
 
                 <LinearLayout
@@ -142,6 +142,7 @@
                 </Button>
                 <Button
                     android:text="@string/btn_CLR"
+                    android:id="@+id/btnDelete"
                     android:background="@color/btnTop"
                     style="@style/myButtonTop">
                 </Button>

@@ -1,6 +1,5 @@
 package com.tdc.edu.vn.myapplication.myadapter;
 import android.app.Activity;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tdc.edu.vn.myapplication.R;
-import com.tdc.edu.vn.myapplication.database.Database;
 import com.tdc.edu.vn.myapplication.modals.ConvertType;
 
 import java.util.ArrayList;
@@ -32,9 +30,9 @@ public class ProductAdapter extends ArrayAdapter<ConvertType> {
         View row = inflater.inflate(R.layout.product,null,true);
 
         //Get view
-        TextView title = (TextView) row.findViewById(R.id.produc_Title);
+        TextView title = (TextView) row.findViewById(R.id.product_Title);
         TextView subTitle = (TextView) row.findViewById(R.id.subTile);
-        ImageView img = (ImageView) row.findViewById(R.id.imgaeView);
+        ImageView img = (ImageView) row.findViewById(R.id.imageView);
 
         ConvertType type = types.get(position);
         title.setText(type.getTypeName());

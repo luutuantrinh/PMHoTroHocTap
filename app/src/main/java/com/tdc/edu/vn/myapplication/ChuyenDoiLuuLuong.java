@@ -2,7 +2,6 @@ package com.tdc.edu.vn.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,13 +17,12 @@ import android.widget.Toast;
 import com.tdc.edu.vn.myapplication.database.Database;
 import com.tdc.edu.vn.myapplication.modals.ConvertUnit;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClickListener{
 
     private TextView tv_KetQua;
-    private EditText edt_ManHinh;
+    private TextView tv_ManHinh;
     private Button btn1;
     private Button btn2;
     private Button btn3;
@@ -40,6 +38,7 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
     private Button btn_Cham;
     private Button btn_All;
     private Button btn_Clear;
+    private Button btn_Delete;
     private Spinner sp1;
     private Spinner sp2;
     public ChuyenDoiLuuLuong() {
@@ -80,7 +79,7 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
         setTitle(newTitle);
 
         //Get view in layout
-        edt_ManHinh = (EditText) findViewById(R.id.edt_ManHinh);
+        tv_ManHinh = (TextView) findViewById(R.id.tv_ManHinh);
         tv_KetQua = (TextView) findViewById(R.id.tv_KetQua);
         btn1 = (Button) findViewById(R.id.btn1);
         btn2 = (Button) findViewById(R.id.btn2);
@@ -96,6 +95,7 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
         btn_KQ = (Button) findViewById(R.id.btn_KQ);
         btn_Cham = (Button) findViewById(R.id.btn_Cham);
         btn_All = (Button) findViewById(R.id.btnAll);
+        btn_Delete = (Button) findViewById(R.id.btnDelete);
         btn_Clear = (Button) findViewById(R.id.btn_Clear);
         sp1 = (Spinner) findViewById(R.id.sp1);
         sp2 = (Spinner) findViewById(R.id.sp2);
@@ -157,59 +157,67 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
         btn_Cham.setOnClickListener(this);
         btn_All.setOnClickListener(this);
         btn_Clear.setOnClickListener(this);
+        btn_Delete.setOnClickListener(this);
     }
 
     public void onClick(View v){
         switch (v.getId()){
             case R.id.btn1:
-                edt_ManHinh.append("1");
+                tv_ManHinh.append("1");
                 break;
             case R.id.btn0:
-                edt_ManHinh.append("0");
+                tv_ManHinh.append("0");
                 break;
             case R.id.btn2:
                 //TO DO
-                edt_ManHinh.append("2");
+                tv_ManHinh.append("2");
                 break;
             case R.id.btn3:
-                edt_ManHinh.append("3");
+                tv_ManHinh.append("3");
                 //TO DO
                 break;
             case R.id.btn4:
                 //TO DO
-                edt_ManHinh.append("4");
+                tv_ManHinh.append("4");
                 break;
             case R.id.btn5:
                 //TO DO
-                edt_ManHinh.append("5");
+                tv_ManHinh.append("5");
                 break;
             case R.id.btn6:
                 //TO DO
-                edt_ManHinh.append("6");
+                tv_ManHinh.append("6");
                 break;
             case R.id.btn7:
                 //TO DO
-                edt_ManHinh.append("7");
+                tv_ManHinh.append("7");
                 break;
             case R.id.btn8:
                 //TO DO
-                edt_ManHinh.append("8");
+                tv_ManHinh.append("8");
                 break;
             case R.id.btn9:
                 //TO DO
-                edt_ManHinh.append("9");
+                tv_ManHinh.append("9");
                 break;
             case R.id.btn_Cham:
                 //TO DO
-                edt_ManHinh.append(".");
+                tv_ManHinh.append(".");
                 break;
             case R.id.btnAll:
                 tv_KetQua.setText("");
-                edt_ManHinh.setText("");
+                tv_ManHinh.setText("");
                 break;
             case R.id.btn_Clear:
-                BaseInputConnection textFieldInputConnection = new BaseInputConnection(edt_ManHinh, true);
-                textFieldInputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL));
+                tv_ManHinh.setText("");
+                tv_KetQua.setText("");
+                break;
+            case R.id.btnDelete:
+                String input = tv_ManHinh.getText().toString();
+                if(input.length() > 0){
+                    input = input.substring(0, input.length()-1);
+                }
+                tv_ManHinh.setText(input);
                 break;
             case R.id.btn_Chuyen:
                 String temp = valueLeft;
@@ -221,51 +229,15 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
                 sp2.setSelection(temp2);
 
                 temp = tv_KetQua.getText().toString();
-                tv_KetQua.setText(edt_ManHinh.getText().toString());
-                edt_ManHinh.setText(temp);
+                tv_KetQua.setText(tv_ManHinh.getText().toString());
+                tv_ManHinh.setText(temp);
                 break;
             case R.id.btn_KQ:
-                calculating(edt_ManHinh, tv_KetQua,  valueLeft, valueRight);
-                /*
-                DecimalFormat df = new DecimalFormat("###.#######");
-                double result;
-                if(sp1.getSelectedItemPosition()==0&&sp2.getSelectedItemPosition()==0){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString());
-                    tv_KetQua.setText(df.format(result) + " GB");
+                try{
+                    calculating(tv_ManHinh, tv_KetQua,  valueLeft, valueRight);
+                }catch (Exception e){
+                    Toast.makeText(this, "Vui lòng nhập phép tính đúng!", Toast.LENGTH_SHORT).show();
                 }
-                else if(sp1.getSelectedItemPosition()==0&&sp2.getSelectedItemPosition()==1){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 1024;
-                    tv_KetQua.setText(df.format(result) + " MB");
-                }
-                else if(sp1.getSelectedItemPosition()==0&&sp2.getSelectedItemPosition()==2){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 106496;
-                    tv_KetQua.setText(df.format(result) + " KB");
-                }
-                else if(sp1.getSelectedItemPosition()==1&&sp2.getSelectedItemPosition()==0){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) / 1024;
-                    tv_KetQua.setText(df.format(result) + " GB");
-                }
-                else if(sp1.getSelectedItemPosition()==1&&sp2.getSelectedItemPosition()==1){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString());
-                    tv_KetQua.setText(df.format(result) + " MB");
-                }
-                else if(sp1.getSelectedItemPosition()==1&&sp2.getSelectedItemPosition()==2){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) * 1024;
-                    tv_KetQua.setText(df.format(result) + " KB");
-                }
-                else if(sp1.getSelectedItemPosition()==2&&sp2.getSelectedItemPosition()==0){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) /106496;
-                    tv_KetQua.setText(df.format(result) + " GB");
-                }
-                else if(sp1.getSelectedItemPosition()==2&&sp2.getSelectedItemPosition()==1){
-                    result = Double.parseDouble(edt_ManHinh.getText().toString()) /1024;
-                    tv_KetQua.setText(df.format(result) + " MB");
-                }
-                else {
-                    result = Double.parseDouble(edt_ManHinh.getText().toString());
-                    tv_KetQua.setText(df.format(result) + " KB");
-                }
-                */
                 break;
             default:
                 break;
@@ -273,7 +245,7 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
 
     }
 
-    private void calculating(EditText input , TextView output, String inputUnit, String outputUnit){
+    private void calculating(TextView input , TextView output, String inputUnit, String outputUnit){
         if(!input.getText().toString().isEmpty()){
             float rateInput = -1;
             float rateOutput = -1;
@@ -287,7 +259,7 @@ public class ChuyenDoiLuuLuong extends AppCompatActivity implements View.OnClick
             }
 
             float result = (rateInput*1000 / rateOutput*1000) * Float.parseFloat(input.getText().toString());
-            output.setText(result/1000 + "");
+            output.setText(result/1000000 + "");
         }
     }
 }
