@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 
 import com.google.android.material.navigation.NavigationView;
+import com.tdc.edu.vn.myapplication.CTToan.MenutoanActivity;
 import com.tdc.edu.vn.myapplication.maytinhcoban.MayTinhCo;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -63,6 +64,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View v) {
                 Intent intent1 = new Intent(MainActivity.this, FirebaseSearch_activity.class);
                 startActivity(intent1);
+
+            }
+        });
+
+        qr_card = findViewById(R.id.qr_card);
+        qr_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this, QR_activity.class);
+                startActivity(intent2);
+
+            }
+        });
+
+        math_card = findViewById(R.id.math_card);
+        math_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MainActivity.this, MenutoanActivity.class);
+                startActivity(intent3);
 
             }
         });

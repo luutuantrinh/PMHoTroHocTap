@@ -45,4 +45,9 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:6.3.0'
     implementation "androidx.core:core-ktx:+"
 
+    // QR
+
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation 'com.karumi:dexter:5.0.0'
+
 }
