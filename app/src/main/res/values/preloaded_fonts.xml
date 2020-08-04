@@ -3,5 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
         <item>@font/baloo</item>
+        <item>@font/nunito_bold</item>
+        <item>@font/nunito_semibold</item>
     </array>
 </resources>

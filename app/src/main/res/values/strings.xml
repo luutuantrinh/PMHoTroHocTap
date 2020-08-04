@@ -6,4 +6,10 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
+
+    <string-array name="spinner1">Lựa chọn
+        <item>Lựa chọn 1</item>
+        <item>Lựa chọn 2</item>
+        <item>Lựa chọn 3</item>
+    </string-array>
 </resources>

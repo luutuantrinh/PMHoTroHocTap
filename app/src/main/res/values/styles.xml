@@ -16,4 +16,49 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="lilayoutedt">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:layout_margin">@dimen/maginall</item>-->
+    </style>
+
+    <style name="edtnumber">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/textsixe</item>
+
+        <item name="android:editable">false</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="button1_9">
+
+        <item name="android:layout_weight">@dimen/wightbtn</item>
+        <item name="android:textSize">@dimen/textsixe</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/button_color</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="button666">
+
+        <item name="android:layout_weight">@dimen/wightbtnn</item>
+        <item name="android:textSize">@dimen/textsixen</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/button_color</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+
+    <style name="lilayoutman">
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">@dimen/wight</item>
+        <!--<item name="android:layout_margin">@dimen/maginall</item>-->
+    </style>
 </resources>

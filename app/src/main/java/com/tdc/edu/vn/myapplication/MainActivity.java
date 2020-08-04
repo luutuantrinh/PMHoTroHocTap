@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -15,10 +16,13 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.google.android.material.navigation.NavigationView;
+import com.tdc.edu.vn.myapplication.maytinhcoban.MayTinhCo;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -29,14 +33,43 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Toolbar toolbar;
     Menu menu;
     TextView textView;
+    CardView cal_card;
+    CardView conver_card;
+    CardView chemis_card;
+    CardView math_card;
+    CardView qr_card;
 
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
+        cal_card = findViewById(R.id.cal_card);
+        cal_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MayTinhCo.class);
+                startActivity(intent);
+
+            }
+        });
+
+        chemis_card = findViewById(R.id.chemis_card);
+        chemis_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this, FirebaseSearch_activity.class);
+                startActivity(intent1);
+
+            }
+        });
+
+
         /*---------------------Hooks------------------------*/
+
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -59,8 +92,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
+
+        navigationView.setCheckedItem(R.id.nav_home);
+
     }
 
+    /*------ To avoid closing the application  on Back pressed ------*/
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -85,8 +122,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_home:
                 break;
             case R.id.nav_cal:
-                Intent intent = new Intent(MainActivity.this, Calculator_activity.class);
+                Intent intent = new Intent(MainActivity.this, MayTinhCo.class);
                 startActivity(intent);
+                break;
+            case R.id.nav_chemistry:
+                Intent intent1 = new Intent(MainActivity.this, FirebaseSearch_activity.class);
+                startActivity(intent1);
                 break;
             case R.id.nav_login:
                 menu.findItem(R.id.nav_logout).setVisible(true);
