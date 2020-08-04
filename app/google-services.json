@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "698118283829",
+    "firebase_url": "https://fir-search-62694.firebaseio.com",
+    "project_id": "fir-search-62694",
+    "storage_bucket": "fir-search-62694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698118283829:android:0603af47ebb26b9dfe077c",
+        "android_client_info": {
+          "package_name": "com.tdc.edu.vn.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698118283829-qn6nhgo0488kqajpeljldm6oqigdsat0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tdc.edu.vn.myapplication",
+            "certificate_hash": "5c66400edc381c3764d5d4fc1219fb826cc972a2"
+          }
+        },
+        {
+          "client_id": "698118283829-vd8cju8areen191ocjtn51ce032vpk59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuJ_RPS73WFvr_K5Llyqd7VmOoKfpcO_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698118283829-vd8cju8areen191ocjtn51ce032vpk59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
