@@ -3,4 +3,10 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="btn">#40555f</color>
+    <color name="btnTop">#005aa1</color>
+    <color name="textbtn">#FFFFFF</color>
+    <color name="textview">#888888</color>
+    <color name="productText">#4d4d4d</color>
+    <color name="btnChuyen">#00FFFF</color>
 </resources>
