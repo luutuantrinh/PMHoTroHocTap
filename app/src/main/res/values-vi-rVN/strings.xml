@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PMHoTroHocTap</string>
+    <string name="lbl_setting">Cài đặt</string>
+    <string name="lbl_distance">Khoảng cách</string>
+    <string name="lbl_weight">Khối lượng</string>
+    <string name="lbl_data">Dữ liệu</string>
+    <string name="lbl_currency">Tiền tệ</string>
+    <string name="lbl_title_convert">Bộ chuyển đổi</string>
+    <string name="lbl_language_setting">Ngôn ngữ</string>
+    <string name="lbl_setting_title">Chọn ngôn ngữ</string>
+</resources>

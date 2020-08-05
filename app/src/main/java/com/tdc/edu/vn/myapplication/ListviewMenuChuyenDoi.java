@@ -68,17 +68,6 @@ public class ListviewMenuChuyenDoi extends AppCompatActivity {
                 intent.putExtras(mBundle);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
-                /*
-                if(mainTitle[position] == "Tiền tệ"){
-                    intent = new Intent(ListviewMenuChuyenDoi.this,ChuyenDoiDonVi1Activity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                    startActivity(intent);
-                }
-                else if(mainTitle[position]=="Lưu lượng"){
-                    intent = new Intent(ListviewMenuChuyenDoi.this,ChuyenDoiLuuLuong.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                    startActivity(intent);
-                }*/
             }
         });
     }

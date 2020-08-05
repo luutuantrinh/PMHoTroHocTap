@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PMHoTroHocTap</string>
+    <string name="lbl_title_convert">단위 변환</string>
+    <string name="lbl_currency">통화</string>
+    <string name="lbl_data">데이터</string>
+    <string name="lbl_weight">무게</string>
+    <string name="lbl_distance">거리</string>
+    <string name="lbl_setting">설정</string>
+    <string name="lbl_language_setting">언어</string>
+    <string name="lbl_setting_title">언어를 선택하십시오</string>
+</resources>

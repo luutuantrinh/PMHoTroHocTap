@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChuyenDoiLuuLuong" />
-        <activity android:name=".ListviewMenuChuyenDoi">
+        <activity android:name=".LayoutTestActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChuyenDoiLuuLuong" />
+        <activity android:name=".ListviewMenuChuyenDoi">
+        </activity>
         <activity android:name=".ChuyenDoiDonVi1Activity" />
+        <activity android:name=".LanguageSettingActivity"/>
         <activity android:name="tdc.edu.vn.pmhotrohoctap.MainActivity" />
     </application>
 
