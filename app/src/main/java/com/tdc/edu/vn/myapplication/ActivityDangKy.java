@@ -36,6 +36,7 @@ public class ActivityDangKy extends AppCompatActivity {
         btnDangNhap = (Button) findViewById(R.id.login);
         mAuth = FirebaseAuth.getInstance();
 
+        setTitle("");
         btnDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

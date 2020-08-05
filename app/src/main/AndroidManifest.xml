@@ -19,7 +19,6 @@
         <activity android:name=".ActivityDangKy"></activity>
         <activity android:name=".ChuyenDoiLuuLuong" />
         <activity android:name=".ListviewMenuChuyenDoi" />
-        <activity android:name=".ChuyenDoiDonVi1Activity" />
         <activity android:name="tdc.edu.vn.pmhotrohoctap.MainActivity" />
     </application>
 

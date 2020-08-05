@@ -33,6 +33,7 @@ public class ActivityDangNhap extends AppCompatActivity {
         btnDangNhap = (Button) findViewById(R.id.DangNhap);
         btnDangKy = (Button) findViewById(R.id.DangKy);
         mAuth = FirebaseAuth.getInstance();
+        setTitle("");
 
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
