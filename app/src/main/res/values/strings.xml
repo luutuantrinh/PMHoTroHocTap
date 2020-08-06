@@ -96,6 +96,8 @@
     <string name="formula_math">Math formula</string>
     <string name="formula_physical">Physical formula</string>
     <string name="formula_chemistry">Chemistry formula</string>
+    <string name="formulas_for_natural_subjects">Formulas for natural subjects</string>
+    <string name="Thinking_Support">Thinking Support</string>
 
     <!-- chemical equation -->
     <string name="chemical_equation_title">Chemical equation</string>

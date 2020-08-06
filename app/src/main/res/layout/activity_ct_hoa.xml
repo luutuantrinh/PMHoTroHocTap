@@ -12,10 +12,7 @@
         style="@style/lilayoutedt"
         android:layout_weight="1">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="000"></EditText>
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

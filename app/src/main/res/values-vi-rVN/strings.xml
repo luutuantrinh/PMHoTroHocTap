@@ -34,4 +34,6 @@
     <string name="lbl_time">Thời gian</string>
     <string name="lbl_area">Diện tích</string>
     <string name="lbl_convert_menu_title">Menu chuyển đổi</string>
+    <string name="formulas_for_natural_subjects">Công thức môn khối tự nhiên</string>
+    <string name="Thinking_Support">Hỗ trợ tư duy</string>
 </resources>
