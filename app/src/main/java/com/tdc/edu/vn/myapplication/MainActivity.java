@@ -12,6 +12,7 @@ import androidx.navigation.NavController;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.Menu;
@@ -24,6 +25,8 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.tdc.edu.vn.myapplication.CTToan.MenutoanActivity;
 import com.tdc.edu.vn.myapplication.maytinhcoban.MayTinhCo;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -39,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     CardView chemis_card;
     CardView math_card;
     CardView qr_card;
+    CardView set_card;
+
+    //language
+    public static String SYSTEM_LANGUAGE = "vi";
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -62,6 +69,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         chemis_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Locale locale = new Locale(MainActivity.SYSTEM_LANGUAGE);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(
+                        config,
+                        getBaseContext().getResources().getDisplayMetrics()
+                );
+                finish();
+                startActivity(getIntent());
                 Intent intent1 = new Intent(MainActivity.this, FirebaseSearch_activity.class);
                 startActivity(intent1);
 
@@ -81,6 +97,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         conver_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Locale locale = new Locale(MainActivity.SYSTEM_LANGUAGE);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(
+                        config,
+                        getBaseContext().getResources().getDisplayMetrics()
+                );
+                finish();
+                startActivity(getIntent());
                 Intent intent2 = new Intent(MainActivity.this, ListviewMenuChuyenDoi.class);
                 startActivity(intent2);
 
@@ -91,9 +116,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         math_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Locale locale = new Locale(MainActivity.SYSTEM_LANGUAGE);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(
+                        config,
+                        getBaseContext().getResources().getDisplayMetrics()
+                );
+                finish();
+                startActivity(getIntent());
                 Intent intent3 = new Intent(MainActivity.this, MenutoanActivity.class);
                 startActivity(intent3);
 
+            }
+        });
+
+        set_card = findViewById(R.id.setting_card);
+        set_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Locale locale = new Locale(MainActivity.SYSTEM_LANGUAGE);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(
+                        config,
+                        getBaseContext().getResources().getDisplayMetrics()
+                );
+                finish();
+                startActivity(getIntent());
+                Intent intent4 = new Intent(MainActivity.this, LanguageSettingActivity.class);
+                startActivity(intent4);
             }
         });
 
@@ -153,14 +205,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_cal:
                 Intent intent = new Intent(MainActivity.this, MayTinhCo.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 startActivity(intent);
                 break;
             case R.id.nav_chemistry:
                 Intent intent1 = new Intent(MainActivity.this, FirebaseSearch_activity.class);
+                intent1.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 startActivity(intent1);
                 break;
             case R.id.nav_cover:
                 Intent intent2 = new Intent(MainActivity.this, ListviewMenuChuyenDoi.class);
+                intent2.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 startActivity(intent2);
                 break;
 
@@ -170,9 +225,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 menu.findItem(R.id.nav_login).setVisible(false);
                 break;
             case R.id.nav_logout:
-                menu.findItem(R.id.nav_logout).setVisible(false);
-                menu.findItem(R.id.nav_profile).setVisible(false);
-                menu.findItem(R.id.nav_login).setVisible(true);
+                Intent intent3 = new Intent(MainActivity.this, ActivityDangNhap.class);
+                intent3.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                startActivity(intent3);
                 break;
             case R.id.nav_share:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();

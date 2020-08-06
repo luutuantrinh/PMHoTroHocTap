@@ -35,6 +35,7 @@
         <activity android:name=".QR_activity"></activity>
         <activity android:name=".ActivityDangKy"></activity>
         <activity android:name=".ListviewMenuChuyenDoi"></activity>
+        <activity android:name=".LanguageSettingActivity" />
         <activity android:name=".ActivityDangNhap">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

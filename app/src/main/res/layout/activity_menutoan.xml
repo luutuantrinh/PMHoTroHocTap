@@ -32,13 +32,13 @@
 
         <Button
             android:background="@color/buttonColor"
-            android:text="Công Thức Toán"
+            android:text="@string/formula_math"
             android:id="@+id/toan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></Button>
 
         <Button
-            android:text="Công Thức Lý"
+            android:text="@string/formula_physical"
             android:id="@+id/ly"
             android:background="@color/buttonColor"
             android:layout_width="match_parent"
@@ -46,7 +46,7 @@
 
         <Button
             android:background="@color/buttonColor"
-            android:text="Công Thức Hóa"
+            android:text="@string/formula_chemistry"
             android:id="@+id/hoa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></Button>

@@ -47,6 +47,7 @@ public class ActivityDangNhap extends AppCompatActivity {
                 intent = new Intent(ActivityDangNhap.this, ActivityDangKy.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
+                edtPassword.setText("");
             }
         });
     }

@@ -34,7 +34,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="24dp"
-            android:text="Hi Love Edu"
+            android:text="@string/header_title"
             android:textSize="30sp"
             app:fontFamily="@font/baloo"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="Support dream for student"
+            android:text="@string/header_subtitle"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -92,7 +92,7 @@
                         android:layout_below="@id/bus"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Calculator"
+                        android:text="@string/lbl_calculate"
                         android:textSize="24sp"
                         app:fontFamily="@font/aclonica" />
 
@@ -124,7 +124,7 @@
                         android:layout_below="@id/imageView3"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Converter"
+                        android:text="@string/lbl_convert_menu"
                         android:textSize="24sp"
                         app:fontFamily="@font/aclonica" />
 
@@ -168,7 +168,7 @@
                         android:layout_below="@id/bus1"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Chemistry"
+                        android:text="@string/lbl_chemistry"
                         android:textSize="24sp"
                         app:fontFamily="@font/aclonica" />
 
@@ -200,7 +200,7 @@
                         android:layout_below="@id/train"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Mathematics"
+                        android:text="@string/lbl_mathermetics"
                         android:textSize="24sp"
                         app:fontFamily="@font/aclonica" />
 
@@ -243,7 +243,7 @@
                         android:layout_below="@id/cycle"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="QRCode"
+                        android:text="@string/lbl_rqcode"
                         android:textSize="24sp"
                         app:fontFamily="@font/aclonica" />
 
@@ -258,6 +258,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/setting_card"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -274,7 +275,7 @@
                         android:layout_below="@id/airplane"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Setting"
+                        android:text="@string/lbl_setting"
                         android:textSize="24sp"
                         app:fontFamily="@font/aclonica" />
 

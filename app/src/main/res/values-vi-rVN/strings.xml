@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hỗ trợ học tập</string>
+    <string name="lbl_setting_title">Chọn ngôn ngữ</string>
+    <string name="hint_pass">Nhập mật khẩu</string>
+    <string name="hint_email">Nhập e-mail</string>
+    <string name="lbl_Registration">Đãng ký</string>
+    <string name="lbl_Login">Đăng nhập</string>
+    <string name="btn_Registration">Đăng ký</string>
+    <string name="btn_Login">Đăng nhập</string>
+    <string name="lbl_title_convert">Chuyển đổi</string>
+    <string name="lbl_currency">Tiền tệ</string>
+    <string name="lbl_data">Dữ liệu</string>
+    <string name="lbl_weight">Trọng lượng</string>
+    <string name="lbl_distance">Khoảng cách</string>
+    <string name="lbl_setting">Cài đặt</string>
+    <string name="lbl_language_setting">Ngôn ngữ</string>
+    <string name="formula_math">Công thức toán</string>
+    <string name="formula_physical">Công thức lý</string>
+    <string name="formula_chemistry">Công thức hóa</string>
+    <string name="lbl_calculate">Máy tính</string>
+    <string name="lbl_chemistry">Hóa học</string>
+    <string name="lbl_mathermetics">Toán học</string>
+    <string name="lbl_rqcode">Mã QR</string>
+    <string name="chemical_equation_title">Phương trình hóa học</string>
+    <string name="search_hint">Tìm kiếm</string>
+    <string name="lbl_home">Trang chủ</string>
+    <string name="lbl_profile">Cá nhân</string>
+    <string name="lbl_logout">Đăng xuất</string>
+    <string name="lbl_communicate">Liên lạc</string>
+    <string name="lbl_rate_us">Đánh giá</string>
+    <string name="lbl_share">Chia sẻ</string>
+    <string name="lbl_convert_menu">Chuyển đổi</string>
+    <string name="lbl_time">Thời gian</string>
+    <string name="lbl_area">Diện tích</string>
+    <string name="lbl_convert_menu_title">Menu chuyển đổi</string>
+</resources>

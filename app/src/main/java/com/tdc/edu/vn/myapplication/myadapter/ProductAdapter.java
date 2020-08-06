@@ -1,6 +1,7 @@
 package com.tdc.edu.vn.myapplication.myadapter;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,12 +19,14 @@ public class ProductAdapter extends ArrayAdapter<ConvertType> {
     private final Activity context;
     private int layoutID;
     private ArrayList<ConvertType> types;
+    private Context myContext;
 
     public ProductAdapter(Activity context, int resource, ArrayList<ConvertType> types) {
         super(context, resource, types);
         this.context = context;
         this.layoutID = resource;
         this.types = types;
+        this.myContext = context;
     }
 
     public View getView(int position, View view, ViewGroup parent) {
@@ -37,7 +40,31 @@ public class ProductAdapter extends ArrayAdapter<ConvertType> {
         ImageView img = (ImageView) row.findViewById(R.id.imageView);
 
         ConvertType type = types.get(position);
-        title.setText(type.getTypeName());
+
+        switch (type.getTypeName()) {
+            case "currency":
+                title.setText(myContext.getResources().getString(R.string.lbl_currency));
+                break;
+            case "weight":
+                title.setText(myContext.getResources().getString(R.string.lbl_weight));
+                break;
+            case "distance":
+                title.setText(myContext.getResources().getString(R.string.lbl_distance));
+                break;
+            case "data":
+                title.setText(myContext.getResources().getString(R.string.lbl_data));
+                break;
+            case "time":
+                title.setText(myContext.getResources().getString(R.string.lbl_time));
+                break;
+            case "area":
+                title.setText(myContext.getResources().getString(R.string.lbl_area));
+                break;
+            default:
+                title.setText(type.getTypeName());
+                break;
+        }
+
         subTitle.setText(type.getSubTitle());
         img.setImageResource(type.getImage());
         return row;
