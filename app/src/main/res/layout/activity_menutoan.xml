@@ -4,45 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="19"
+    android:layout_weight="8"
+    android:background="@drawable/b4543a05c81b5465fe28bb24c746e691"
     android:orientation="vertical"
     tools:context=".CTToan.MenutoanActivity">
     <LinearLayout
-        style="@style/lilayoutedt"
-        android:layout_weight="1">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="000"></EditText>
-        <!--      //cho cai menu vao day vd: <tdc.edu.vn.mutimedia.LibaryControl.MyLayerCOntrol-->
-        <!--      android:layout_width="match_parent"-->
-        <!--      android:layout_height="match_parent"-->
-        <!--      android:id="@+id/player">-->
 
-        <!--  </tdc.edu.vn.mutimedia.LibaryControl.MyLayerCOntrol>-->
+        android:background="@drawable/button_menu"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/white"
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hỗ trợ Công Thức Toán Học"
+            >
+        </TextView>
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Trung Học Phổ Thông"
+            ></TextView>
     </LinearLayout>
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="18"
+        android:layout_weight="2"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-        <Button
-            android:background="@color/buttonColor"
-            android:text="Công Thức Toán"
-            android:id="@+id/toan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Button>
-        <Button
-            android:text="Công Thức Lý"
-            android:id="@+id/ly"
-            android:background="@color/buttonColor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Button>
-        <Button
-            android:background="@color/buttonColor"
-            android:text="Công Thức Hóa"
-            android:id="@+id/hoa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Button>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Button
+              style="@style/btnmenut"
+                android:text="Công Thức Toán"
+                android:id="@+id/toan"
+                ></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Button
+                style="@style/btnmenut"
+                android:text="Công Thức Lý"
+                android:id="@+id/ly"
+                ></Button>
+        </LinearLayout>
+
     </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/hoa"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:padding="4dp"
+                android:layout_width="230dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_menu"
+                android:textColor="@color/white"
+                android:text="Công Thức Hóa"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
 </LinearLayout>

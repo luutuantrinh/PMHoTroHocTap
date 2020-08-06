@@ -9,4 +9,7 @@
     <color name="gray">#4C787E</color>
     <color name="naudam">#808080</color>
     <color name="buttonColor">#e55c00</color>
+    <color name="textbtn">#FFFFFF</color>
+    <color name="btn">#40555f</color>
+    <color name="btnChuyen">#00FFFF</color>
 </resources>

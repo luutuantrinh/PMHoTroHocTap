@@ -8,6 +8,7 @@ import android.widget.EditText;
 
 import com.tdc.edu.vn.myapplication.R;
 
+import java.io.NotActiveException;
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -213,7 +214,7 @@ class InfixToPostfix{
     }
 }
 
-public class MayTinhCo extends AppCompatActivity implements View.OnClickListener {
+public class MayTinhCoActivity extends AppCompatActivity implements View.OnClickListener {
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0;
     Button btnxxx,btnxcanx,btnlog10,btnmc,btnxoa1,btnxoahet,btnxoa2,chamthang;
     Button btnngoac1,btnngoac2,btnmcong,btnmtru,btnmro;
@@ -260,6 +261,7 @@ public class MayTinhCo extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_may_tinh_co);
+        setTitle("Calculator");
         edtnumberc = findViewById(R.id.edtnumberc);
         edtnumber = findViewById(R.id.edtnumber);
         btnmcong = findViewById(R.id.btnmcong);

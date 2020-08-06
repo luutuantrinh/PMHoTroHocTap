@@ -22,7 +22,7 @@
         </activity>
         <activity android:name=".CTToan.Hoaactivity">
         </activity>
-        <activity android:name=".maytinhcoban.MayTinhCo">
+        <activity android:name=".maytinhcoban.MayTinhCoActivity">
 
         </activity>
         <activity android:name=".MainActivity">

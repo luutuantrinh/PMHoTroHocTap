@@ -7,23 +7,7 @@
     android:layout_gravity="center"
     android:layout_weight="19"
     android:orientation="vertical"
-    tools:context=".maytinhcoban.MayTinhCo">
-
-    <LinearLayout
-        style="@style/lilayoutedt"
-        android:layout_weight="1">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="000"></EditText>
-        <!--      //cho cai menu vao day vd: <tdc.edu.vn.mutimedia.LibaryControl.MyLayerCOntrol-->
-        <!--      android:layout_width="match_parent"-->
-        <!--      android:layout_height="match_parent"-->
-        <!--      android:id="@+id/player">-->
-
-        <!--  </tdc.edu.vn.mutimedia.LibaryControl.MyLayerCOntrol>-->
-    </LinearLayout>
-
+    tools:context=".maytinhcoban.MayTinhCoActivity">
     <LinearLayout
         android:orientation="vertical"
         style="@style/lilayoutedt"
@@ -62,6 +46,7 @@
             android:layout_weight="2"
             >
             <Button
+
                 android:id="@+id/btnx1"
                 style="@style/button666"
                 android:text="x^" />
@@ -76,8 +61,10 @@
             <Button
                 android:id="@+id/btnxoa1"
                 style="@style/button666"
+                android:background="@color/colorPrimaryDark"
                 android:text="C" />
             <Button
+                android:background="@color/colorPrimaryDark"
                 android:id="@+id/btnxoahet"
                 style="@style/button666"
                 android:text="CLR" />
