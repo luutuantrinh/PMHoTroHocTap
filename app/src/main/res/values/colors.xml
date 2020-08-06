@@ -11,4 +11,12 @@
     <color name="gray">#4C787E</color>
     <color name="naudam">#808080</color>
     <color name="buttonColor">#e55c00</color>
+
+    <color name="btn">#40555f</color>
+    <color name="btnTop">#005aa1</color>
+    <color name="textbtn">#FFFFFF</color>
+    <color name="textview">#888888</color>
+    <color name="productText">#4d4d4d</color>
+    <color name="btnChuyen">#00FFFF</color>
+    <color name="edt_nen">#594e77</color>
 </resources>

@@ -77,6 +77,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             }
         });
+        conver_card = findViewById(R.id.conver_card);
+        conver_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this, ListviewMenuChuyenDoi.class);
+                startActivity(intent2);
+
+            }
+        });
 
         math_card = findViewById(R.id.math_card);
         math_card.setOnClickListener(new View.OnClickListener() {
@@ -150,6 +159,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent1 = new Intent(MainActivity.this, FirebaseSearch_activity.class);
                 startActivity(intent1);
                 break;
+            case R.id.nav_cover:
+                Intent intent2 = new Intent(MainActivity.this, ListviewMenuChuyenDoi.class);
+                startActivity(intent2);
+                break;
+
             case R.id.nav_login:
                 menu.findItem(R.id.nav_logout).setVisible(true);
                 menu.findItem(R.id.nav_profile).setVisible(true);

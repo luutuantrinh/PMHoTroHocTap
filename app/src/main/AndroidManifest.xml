@@ -28,15 +28,21 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".maytinhcoban.MayTinhCo"></activity>
+        <activity android:name=".FirebaseSearch_activity"></activity>
+        <activity android:name=".QR_activity"></activity>
+        <activity android:name=".ActivityDangKy"></activity>
+        <activity android:name=".ListviewMenuChuyenDoi"></activity>
+        <activity android:name=".ActivityDangNhap">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".maytinhcoban.MayTinhCo"></activity>
-        <activity android:name=".FirebaseSearch_activity"></activity>
-        <activity android:name=".QR_activity"></activity>
+        <activity android:name=".ChuyenDoiLuuLuong"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
