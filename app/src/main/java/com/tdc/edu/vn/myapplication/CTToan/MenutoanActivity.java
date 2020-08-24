@@ -14,7 +14,7 @@ public class MenutoanActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menutoan);
+        setContentView(R.layout.activity_menutoan_layout);
         setTitle("Công thức Khối A THPT");
         Button Toan = findViewById(R.id.toan);
         Button Lyhoc = findViewById(R.id.ly);

@@ -8,7 +8,6 @@ import android.widget.EditText;
 
 import com.tdc.edu.vn.myapplication.R;
 
-import java.io.NotActiveException;
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -260,7 +259,7 @@ public class MayTinhCoActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_may_tinh_co);
+        setContentView(R.layout.activity_may_tinh_co_layout);
         setTitle("Calculator");
         edtnumberc = findViewById(R.id.edtnumberc);
         edtnumber = findViewById(R.id.edtnumber);

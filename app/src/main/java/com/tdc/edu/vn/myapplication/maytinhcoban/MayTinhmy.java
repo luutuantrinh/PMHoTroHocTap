@@ -23,7 +23,7 @@ class MayTinhmy extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_may_tinh_co);
+        setContentView(R.layout.activity_may_tinh_co_layout);
         edtnumberc = findViewById(R.id.edtnumberc);
         edtnumber = findViewById(R.id.edtnumber);
 

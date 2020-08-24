@@ -7,15 +7,14 @@
     android:layout_gravity="center"
     android:layout_weight="19"
     android:orientation="vertical"
-    tools:context=".maytinhcoban.MayTinhCoActivity">
+    tools:context=".maytinhcoban.MayTinhCo">
     <LinearLayout
         android:orientation="vertical"
         style="@style/lilayoutedt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:background="@drawable/my_boder"
-        >
+        android:background="@drawable/my_boder">
 
         <EditText
             android:id="@+id/edtnumberc"
@@ -41,80 +40,94 @@
         style="@style/lilayoutedt"
         android:layout_weight="6"
         android:orientation="vertical">
+
         <LinearLayout
             style="@style/lilayoutedt"
-            android:layout_weight="2"
-            >
-            <Button
+            android:layout_weight="2">
 
+            <Button
                 android:id="@+id/btnx1"
                 style="@style/button666"
                 android:text="x^" />
+
             <Button
                 android:id="@+id/btnxoa2"
                 style="@style/button666"
                 android:text="⇤ " />
+
             <Button
                 android:id="@+id/chamthang"
                 style="@style/button666"
                 android:text="!" />
+
             <Button
+                android:background="@color/colorPrimary"
                 android:id="@+id/btnxoa1"
                 style="@style/button666"
-                android:background="@color/colorPrimaryDark"
                 android:text="C" />
+
             <Button
-                android:background="@color/colorPrimaryDark"
                 android:id="@+id/btnxoahet"
+                android:background="@color/colorPrimary"
                 style="@style/button666"
                 android:text="CLR" />
         </LinearLayout>
+
         <LinearLayout
             style="@style/lilayoutedt"
-            android:layout_weight="2"
-            >
+            android:layout_weight="2">
+
             <Button
                 android:id="@+id/btnsin"
                 style="@style/button666"
                 android:text="Sin" />
+
             <Button
                 android:id="@+id/btncos"
                 style="@style/button666"
-                android:text="Cos"/>
+                android:text="Cos" />
+
             <Button
                 android:id="@+id/btnxcanx"
                 style="@style/button666"
                 android:text="√a" />
+
             <Button
                 android:id="@+id/btnlog10"
                 style="@style/button666"
                 android:text="Log10" />
+
             <Button
                 android:id="@+id/btnmc"
                 style="@style/button666"
                 android:text="MC" />
         </LinearLayout>
+
         <LinearLayout
             style="@style/lilayoutedt"
 
-            android:layout_weight="2"
-            >
+            android:layout_weight="2">
+
             <Button
                 android:id="@+id/btnngoac1"
                 style="@style/button666"
                 android:text="(" />
+
             <Button
                 android:id="@+id/btnngoac2"
                 style="@style/button666"
                 android:text=")" />
+
             <Button
                 android:id="@+id/btnmcong"
                 style="@style/button666"
                 android:text="M+" />
+
             <Button
                 android:id="@+id/btnmtru"
                 style="@style/button666"
                 android:text="M-" />
+
             <Button
                 android:id="@+id/btnmro"
                 style="@style/button666"
@@ -130,8 +143,7 @@
         android:orientation="vertical">
 
 
-        <LinearLayout
-            style="@style/lilayoutman">
+        <LinearLayout style="@style/lilayoutman">
 
             <Button
                 android:id="@+id/btn7"
@@ -255,5 +267,8 @@
                 android:text="=" />
 
         </LinearLayout>
+
     </LinearLayout>
+
+
 </LinearLayout>

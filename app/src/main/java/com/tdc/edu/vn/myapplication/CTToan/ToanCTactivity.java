@@ -4,7 +4,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.os.Handler;
 
 import com.tdc.edu.vn.myapplication.R;
 import com.tdc.edu.vn.myapplication.card_model.card_view_model;
@@ -23,7 +22,7 @@ public class ToanCTactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ct_toan);
+        setContentView(R.layout.activity_ct_toan_layout);
         //Initiation of data
         data.add(new card_view_model("page 1", R.drawable.cttth));
         data.add(new card_view_model("page 2", R.drawable.ctt2));

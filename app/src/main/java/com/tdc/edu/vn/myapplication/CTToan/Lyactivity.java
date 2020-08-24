@@ -14,7 +14,7 @@ public class Lyactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ct_ly);
+        setContentView(R.layout.activity_ct_ly_layout);
         //Initiation of data
         data.add(new card_view_model("page 1", R.drawable.vl2_thpt));
         data.add(new card_view_model("page 2", R.drawable.vl3_thpt));

@@ -23,7 +23,7 @@ public class Hoaactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ct_hoa);
+        setContentView(R.layout.activity_ct_hoa_layout);
         //Initiation of data
         data.add(new card_view_model("page 1", R.drawable.hoa_10_1));
         data.add(new card_view_model("page 2", R.drawable.hoa_10_2));

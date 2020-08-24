@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="8"
-    android:background="@drawable/b4543a05c81b5465fe28bb24c746e691"
+    android:background="@drawable/inmes"
     android:orientation="vertical"
     tools:context=".CTToan.MenutoanActivity">
     <LinearLayout
@@ -18,7 +18,7 @@
         <TextView
             android:textSize="30sp"
             android:textColor="@color/white"
-           
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hỗ trợ Công Thức Toán Học"
@@ -44,8 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
             <Button
-              style="@style/btnmenut"
-                android:text="Công Thức Toán"
+                style="@style/btnmenut"
+                android:text="@string/formula_math"
                 android:id="@+id/toan"
                 ></Button>
         </LinearLayout>
@@ -56,7 +56,7 @@
             android:layout_height="match_parent">
             <Button
                 style="@style/btnmenut"
-                android:text="Công Thức Lý"
+                android:text="@string/formula_physical"
                 android:id="@+id/ly"
                 ></Button>
         </LinearLayout>
@@ -80,12 +80,12 @@
                 android:textAllCaps="false"
                 android:textSize="30sp"
                 android:padding="4dp"
-                android:layout_width="230dp"
+                android:layout_width="220dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/button_menu"
                 android:textColor="@color/white"
-                android:text="Công Thức Hóa"></Button>
+                android:text="@string/formula_chemistry"></Button>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout

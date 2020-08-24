@@ -53,7 +53,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
     @Override
     public int getItemViewType(int position) {
-            return R.layout.card_view_layout;
+            return R.layout.card_layout;
     }
 
 }
