@@ -1,3 +1,105 @@
 <resources>
-    <string name="app_name">PMHoTroHocTap</string>
+    <string name="app_name" translatable="false">PMHoTroHocTap</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string-array name="spinner1">Lựa chọn
+        <item>Lựa chọn 1</item>
+        <item>Lựa chọn 2</item>
+        <item>Lựa chọn 3</item>
+    </string-array>
+
+    <string name="btn_1" translatable="false">1</string>
+    <string name="btn_0" translatable="false">0</string>
+    <string name="btn_2" translatable="false">2</string>
+    <string name="btn_3" translatable="false">3</string>
+    <string name="btn_4" translatable="false">4</string>
+    <string name="btn_5" translatable="false">5</string>
+    <string name="btn_6" translatable="false">6</string>
+    <string name="btn_7" translatable="false">7</string>
+    <string name="btn_8" translatable="false">8</string>
+    <string name="btn_9" translatable="false">9</string>
+    <string name="btn_C" translatable="false">C</string>
+    <string name="btn_Cong" translatable="false">+</string>
+    <string name="btn_Bang" translatable="false">=</string>
+    <string name="btn_Tru" translatable="false">-</string>
+    <string name="btn_Nhan" translatable="false">&#215;</string>
+    <string name="btn_Chia" translatable="false">&#247;</string>
+    <string name="btn_PhanTram" translatable="false">%</string>
+    <string name="btn_Phay" translatable="false">.</string>
+    <string name="btn_TenPhai" translatable="false">&#8594;</string>
+    <string name="btn_TenTrai" translatable="false">&#8592;</string>
+    <string name="btn_Abs" translatable="false">Abs</string>
+    <string name="btn_CLR" translatable="false">CLR</string>
+    <string name="btn_ALL" translatable="false">ALL</string>
+    <string name="btn_Exp" translatable="false">Exp</string>
+    <string name="btn_Ans" translatable="false">Ans</string>
+    <string name="btn_x" translatable="false">&#215;&#8315;&#185;</string>
+    <string name="btn_can" translatable="false">&#8730;&#215;</string>
+    <string name="btn_BinhPhuong" translatable="false">&#215;&#178;</string>
+    <string name="btn_GiaiThua" translatable="false">&#120;&#33;</string>
+    <string name="btn_MoNgoac" translatable="false">&#40;</string>
+    <string name="btn_DongNgoac" translatable="false">&#41;</string>
+    <string name="btn_Log" translatable="false">&#76;&#111;&#103;&#8336;&#120;</string>
+    <string name="btn_CanX" translatable="false">&#879;&#8730;&#121;</string>
+    <string name="btn_chuyenDoi" translatable="false">&#8644;</string>
+    <string name="btn_sin" translatable="false">sin</string>
+    <string name="btn_cos" translatable="false">cos</string>
+    <string name="btn_Login">Login</string>
+    <string name="btn_Registration">Registration</string>
+    <string name="lbl_Login">Login</string>
+    <string name="lbl_Registration">Registration</string>
+    <string name="hint_email">Please enter your email</string>
+    <string name="hint_pass">Please enter your password</string>
+    <string-array name="Spinner">
+        <item>GB</item>
+        <item>MB</item>
+        <item>KB</item>
+    </string-array>
+
+    <string name="lbl_setting_title">Select your language</string>
+    <string name="lbl_title_convert">Convert</string>
+    <string name="lbl_currency">Currency</string>
+    <string name="lbl_data">Data</string>
+    <string name="lbl_weight">Weight</string>
+    <string name="lbl_distance">Distance</string>
+    <string name="lbl_setting">Settings</string>
+    <string name="lbl_language_setting">Language</string>
+    <string name="lbl_Vietnamese" translatable="false">Tiếng Việt</string>
+    <string name="lbl_English" translatable="false">English</string>
+    <string name="lbl_Hangul" translatable="false">한국어</string>
+    <string name="lbl_convert_menu">Convert</string>
+    <string name="lbl_time">Time</string>
+    <string name="lbl_area">Area</string>
+
+    <!--Header -->
+    <string name="header_title" translatable="false">Hi Love Edu</string>
+    <string name="header_subtitle" translatable="false">Support dream for Student</string>
+    <string name="lbl_calculate">Calculator</string>
+    <string name="lbl_chemistry">Chemistry</string>
+    <string name="lbl_mathermetics">Mathematics</string>
+    <string name="lbl_rqcode">QR Code</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_profile">Profile</string>
+    <string name="lbl_logout">Log out</string>
+    <string name="lbl_communicate">Communicate</string>
+    <string name="lbl_rate_us">Rate us</string>
+    <string name="lbl_share">Share</string>
+    <string name="lbl_convert_menu_title">Convert menu</string>
+
+
+    <!-- menu toan -->
+    <string name="formula_math">Math formula</string>
+    <string name="formula_physical">Physical formula</string>
+    <string name="formula_chemistry">Chemistry formula</string>
+    <string name="formulas_for_natural_subjects">Formulas for natural subjects</string>
+    <string name="Thinking_Support">Thinking Support</string>
+
+    <!-- chemical equation -->
+    <string name="chemical_equation_title">Chemical equation</string>
+    <string name="search_hint">Search here</string>
 </resources>

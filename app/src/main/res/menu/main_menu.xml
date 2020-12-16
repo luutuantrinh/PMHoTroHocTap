@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        // o day thi ko ?
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/lbl_home" />
+
+        <item
+            android:id="@+id/nav_cal"
+            android:icon="@drawable/ic_es_calculator"
+            android:title="@string/lbl_calculate" />
+
+        <item
+            android:id="@+id/nav_cover"
+            android:icon="@drawable/ic_conver"
+            android:title="@string/lbl_title_convert" />
+
+        <item
+            android:id="@+id/nav_chemistry"
+            android:icon="@drawable/ic_atomic"
+            android:title="@string/lbl_chemistry" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="@string/lbl_profile">
+            <menu>
+                // sao trong nay lai co cai group con
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_login"
+                        android:icon="@drawable/ic_login"
+                        android:title="@string/lbl_Login" />
+
+                    <item
+                        android:id="@+id/nav_profile"
+                        android:icon="@drawable/ic_profile"
+                        android:title="@string/lbl_profile" />
+
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_logout"
+                        android:title="@string/lbl_logout" />
+                </group>
+            </menu>
+        </item>
+
+    </group>
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rating"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+
+</menu>
